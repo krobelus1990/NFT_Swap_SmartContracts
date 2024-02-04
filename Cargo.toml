@@ -1,0 +1,23 @@
+[package]
+name = "cofre"
+version = "0.1.0-beta"
+description = "General purpose and highly configurable Escrow program for Solana programs."
+edition = "2018"
+repository = "https://github.com/cofre-so/cofre"
+authors = ["Cofre Development Team dev@cofre.so"]
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "cofre"
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.18.2"
+anchor-spl = "0.18.2"
+spl-token = { version = "3.2.0", features = ["no-entrypoint"] }
+vipers = "1.5.3"
