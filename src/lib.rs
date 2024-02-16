@@ -31,6 +31,7 @@ use {
 
 declare_id!("Cofre5DxTYsWtWKrby3hLVg8pM5RePf96sCa7HJMwDeZ");
 
+
 #[program]
 pub mod ninja {
     use super::*;
